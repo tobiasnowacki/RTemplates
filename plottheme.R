@@ -2,7 +2,7 @@ library(ggplot2)
 library(extrafont)
 library(viridis)
 
-font_import()
+# font_import()
 
 # Define ggplot theme
 theme_tn <- function(){
