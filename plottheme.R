@@ -6,9 +6,9 @@ library(viridis)
 
 # Define ggplot theme
 theme_tn <- function(){
-  theme_bw(base_size=11) %+replace%
+  theme_bw(base_size=11) +
   theme(
-    text = element_text(family = "Roboto"),
+    text = element_text(family = "Roboto", size = 11),
     panel.grid.major =  element_line(
       colour = "grey50",
       size = 0.2,
@@ -20,9 +20,10 @@ theme_tn <- function(){
     legend.title = element_text(size = 10, face = "bold"),
     strip.background = element_rect(fill= NULL, colour = "white", linetype = NULL),
     strip.text = element_text(colour = 'grey50', size = 9, vjust = 0.5),
-    axis.text = element_text(family = "Roboto Condensed")
+    axis.text = element_text(family = "Roboto Condensed"),
+    axis.title.x = element_text(family = "Roboto", face = "bold"),
+    axis.title.y = element_text(family = "Roboto", face = "bold"),
+  legend.position = "bottom"
   )
 }
 
-# Colourblind palette for plots etc.
-cbbPalette <- c("#000000", "#E69F00", "#56B4E9", "#009E73", "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
