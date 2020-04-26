@@ -9,10 +9,10 @@ theme_tn <- function(){
   theme_bw(base_size=11) +
   theme(
     text = element_text(family = "Roboto", size = 11),
-    panel.grid.major =  element_line(
-      colour = "grey50",
-      size = 0.2,
-      linetype = "dotted"),
+    # panel.grid.major =  element_line(
+    #   colour = "grey50",
+    #   size = 0.2,
+    #   linetype = "dotted"),
     panel.grid.minor = element_blank(),
     panel.grid.major = element_blank(),
     panel.background = element_rect(fill = "WHITE"),
